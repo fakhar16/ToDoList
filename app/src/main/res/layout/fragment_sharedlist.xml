@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Shared Tasks"
+        android:id="@+id/TaskHeading1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_sharedlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TaskHeading1" />
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addtaskSharedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="90dp"
+            android:clickable="true"
+
+
+            app:srcCompat="@drawable/ic_add" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
